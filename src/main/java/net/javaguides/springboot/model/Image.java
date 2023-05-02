@@ -10,8 +10,23 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "Image")
 public class Image {
+	
+	public Image() {
+		super();
+	}
+	
+    public Image(String title, String description, String tags, String category, byte[] picByte) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.tags = tags;
+		this.category = category;
+		this.picByte = picByte;
+	}
 
-    @Id
+
+
+	@Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
