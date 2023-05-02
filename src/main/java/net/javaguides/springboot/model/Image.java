@@ -57,13 +57,13 @@ public class Image {
         return title;
     }
     public void setTitle(String title) {
-        title = title;
+        this.title = title;
     }
     public String getDescription() {
         return description;
     }
     public void setDescription(String description) {
-        description = description;
+       this.description = description;
     }
     public byte[] getPicByte() {
         return picByte;
